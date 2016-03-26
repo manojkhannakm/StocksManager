@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StocksManager:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/StocksManager_jar</output-path>
+    <root id="archive" name="StocksManager.jar">
+      <element id="module-output" name="StocksManager" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/joda-time-2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/poi-3.9-20121203.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
