@@ -138,8 +138,7 @@ public class BillTab extends JPanel {
 
         TableRowSorter<DefaultTableModel> billTableSorter = new TableRowSorter<>(billTableModel);
         billTableSorter.setSortsOnUpdates(true);
-        @SuppressWarnings("unchecked")
-        final Comparator<String> defaultComparator = (Comparator<String>) billTableSorter.getComparator(0);
+        @SuppressWarnings("unchecked") final Comparator<String> defaultComparator = (Comparator<String>) billTableSorter.getComparator(0);
         for (int i = 0, n = billTableModel.getColumnCount(); i < n; i++) {
             billTableSorter.setComparator(i, (object1, object2) -> {
                 String string1 = object1.toString(), string2 = object2.toString();

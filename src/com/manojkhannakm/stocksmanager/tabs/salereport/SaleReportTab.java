@@ -89,8 +89,7 @@ public class SaleReportTab extends JPanel {
 
         TableRowSorter<DefaultTableModel> saleReportTableSorter = new TableRowSorter<>(saleReportTableModel);
         saleReportTableSorter.setSortsOnUpdates(true);
-        @SuppressWarnings("unchecked")
-        final Comparator<String> defaultComparator = (Comparator<String>) saleReportTableSorter.getComparator(0);
+        @SuppressWarnings("unchecked") final Comparator<String> defaultComparator = (Comparator<String>) saleReportTableSorter.getComparator(0);
         for (int i = 0, n = saleReportTableModel.getColumnCount(); i < n; i++) {
             saleReportTableSorter.setComparator(i, (object1, object2) -> {
                 String string1 = object1.toString(), string2 = object2.toString();

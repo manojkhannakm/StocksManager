@@ -228,8 +228,7 @@ public class SearchTab extends JPanel {
 
         TableRowSorter<DefaultTableModel> resultTableSorter = new TableRowSorter<>(resultTableModel);
         resultTableSorter.setSortsOnUpdates(true);
-        @SuppressWarnings("unchecked")
-        final Comparator<String> defaultComparator = (Comparator<String>) resultTableSorter.getComparator(0);
+        @SuppressWarnings("unchecked") final Comparator<String> defaultComparator = (Comparator<String>) resultTableSorter.getComparator(0);
         for (int i = 0, n = resultTableModel.getColumnCount(); i < n; i++) {
             resultTableSorter.setComparator(i, (object1, object2) -> {
                 String string1 = object1.toString(), string2 = object2.toString();
