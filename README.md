@@ -1,4 +1,4 @@
-# StocksManager
+# Stocks Manager
 
 ### Introduction
 
